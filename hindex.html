@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Conexão Campo e Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Projeto Agrinho</h1>
+        <p>1º Ano do Ensino Médio - Sustentabilidade e Inovação</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>O que é o Agrinho?</h2>
+            <p>O Agrinho é o maior programa de responsabilidade social do Sistema FAEP/SENAR-PR. Ele leva reflexões sobre ética, sustentabilidade, cidadania e inovação local para escolas de todo o estado, conectando o conhecimento do campo com a cidade.</p>
+        </section>
+
+        <section class="card">
+            <h2>Sustentabilidade no Campo</h2>
+            <p>A agricultura moderna utiliza tecnologia para proteger o meio ambiente. Exemplos disso são o uso de drones, a rotação de culturas e a economia de água no manejo da terra.</p>
+            <button id="btnQuiz">Testar Conhecimento</button>
+        </section>
+
+        <section id="quizSection" class="card hidden">
+            <h3>Quiz Rápido: Agrinho</h3>
+            <p id="pergunta">Qual dessas práticas ajuda a preservar o solo na agricultura?</p>
+            <div class="opcoes">
+                <button onclick="verificarResposta(true)">Rotação de culturas</button>
+                <button onclick="verificarResposta(false)">Uso excessivo de água</button>
+            </div>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Trabalho Escolar - Colégio Estadual do Paraná</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
